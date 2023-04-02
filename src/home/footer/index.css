@@ -1,0 +1,18 @@
+.titleBrand{
+    background-color: #0D28A6;
+    border: none !important;   
+    color: #0D28A6;
+}
+
+.reward{
+    background-color: #0D28A6;
+    border-radius: 100%;
+    padding: 8px;
+    color: white;
+    margin-right: 10px;
+}
+
+.facebook{
+    color: #0D28A6;
+    margin-right: 13px;
+}

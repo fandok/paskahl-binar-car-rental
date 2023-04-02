@@ -1,0 +1,33 @@
+.btn    {
+    background-color: #5CB85F !important;
+    border: none !important;
+}
+
+.svg{
+    margin-top: 100px;
+}
+
+.header{
+    background-color: #F1F3FF;
+
+}
+
+.headerCarList{
+    background-color: #F1F3FF;
+    height: 200px;
+}
+
+.check{
+    background-color: #CFD4ED;
+    color: #0D28A6;
+    padding: 3px;
+    border-radius: 100%;
+}
+
+.image-girl{
+    width: 300px !important;
+}
+
+.link{
+    text-decoration: none;
+}

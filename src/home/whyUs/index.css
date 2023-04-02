@@ -1,0 +1,27 @@
+.thumbs{
+    background-color: #F9CC00;
+    border-radius: 100%;
+    padding: 8px;
+    color: white;
+}
+
+.coupen{
+    background-color: #FA2C5A;
+    border-radius: 100%;
+    padding: 8px;
+    color: white;
+}
+
+.clock{
+    background-color: #0D28A6;
+    border-radius: 100%;
+    padding: 8px;
+    color: white;
+}
+
+.reward{
+    background-color: #5CB85F;
+    border-radius: 100%;
+    padding: 8px;
+    color: white;
+}

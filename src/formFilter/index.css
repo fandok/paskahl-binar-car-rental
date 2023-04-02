@@ -1,0 +1,22 @@
+.formFilter{
+    position: relative;
+    margin-top: -50px;
+}
+
+.form{
+    width: 21.5%;
+}
+
+.button{
+    width: 14%;
+    margin-top: 6px;
+}
+
+@media screen and (max-width:992px) {
+    .form{
+        width: 100% !important;
+    }
+    .button{
+        width: 100% !important;
+    }
+}
