@@ -1,8 +1,10 @@
 import React from "react";
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
-import toRupiah from '@develoka/angka-rupiah-js';
 import { Link } from "react-router-dom";
 const CarIndex = (props) => {
+  const formatRupiah= (number)=> {
+    return new Intl.NumberFormat('id-ID', {style: 'currency', currency: 'IDR'}).format(number);
+  }
    
        if(props?.data?.cars?.length === 0){
         return(
@@ -29,7 +31,7 @@ const CarIndex = (props) => {
                       <Card.Img variant="top" height={200} src={result.image} />
                       <Card.Body>
                       <Card.Subtitle className="mb-2 text-muted">{result.name}</Card.Subtitle>
-                        <Card.Title>{ toRupiah(result.price)}/Hari</Card.Title>
+                        <Card.Title>{ formatRupiah(result.price)}/Hari</Card.Title>
                         <Card.Text>
                           Some quick example text to build on the card title and
                           make up the bulk of the card's content.

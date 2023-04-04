@@ -1,9 +1,12 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
-import toRupiah from '@develoka/angka-rupiah-js';
 
 const CarDetail = (props) => {
   console.log("dari data props",props);
+
+  const formatRupiah= (number)=> {
+    return new Intl.NumberFormat('id-ID', {style: 'currency', currency: 'IDR'}).format(number);
+  }
   return (
     <>
       <Container>
@@ -105,7 +108,7 @@ const CarDetail = (props) => {
                 <Card.Text>
                   <div className="mt-5 fw-bolder d-flex justify-content-between">
                     <h6>Total</h6>
-                    <h6>{ toRupiah(props?.dataDetail?.price)}</h6>
+                    <h6>{ formatRupiah(props?.dataDetail?.price)}</h6>
                   </div>
                 </Card.Text>
               </Card.Body>
