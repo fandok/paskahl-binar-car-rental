@@ -5,28 +5,22 @@ import FormFilter from "../formFilter/formFilter";
 import Footer from "../home/footer";
 import OurService from "../home/ourService";
 import SidebarNav from "../home/sidebar/Sidebar";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCarList } from "../store";
 
 const CarListPage = () => {
-  const [data, setData] = useState({});
+  const dispatch = useDispatch();
+  const data = useSelector((state) => {
+    return state.carListData;
+  });
 
   useEffect(() => {
-    getData()
-  }, []);
-
-  const getData = (params={}) =>{
-    axios
-      .get("https://bootcamp-rent-cars.herokuapp.com/customer/v2/car", {
-        params,
-      })
-      .then((res) => {
-        setData(res.data);
-      });
-} 
+    fetchCarList(dispatch);
+  }, [dispatch]);
 
   const filterForm = (params) => {
-    getData(params)
+    // getData(params)
   };
-
 
   return (
     <>
